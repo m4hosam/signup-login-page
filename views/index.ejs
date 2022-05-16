@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+        <input type="checkbox" id="chk" aria-hidden="true">
+
+        <div class="signup">
+            <form method="post" action="/signup">
+                <label for="chk" aria-hidden="true">Sign up</label>
+                <input type="text" autocomplete="off" name="username" placeholder="User name" required="">
+                <input type="email" autocomplete="off" name="email" placeholder="Email" required="">
+                <input type="password" name="password" placeholder="Password" required="">
+                <button>Sign up</button>
+            </form>
+        </div>
+
+        <div class="login">
+            <form method="post" action="/login">
+                <label for="chk" aria-hidden="true">Login</label>
+                <input type="email" autocomplete="off" name="email" placeholder="Email" required="">
+                <input type="password" name="password" placeholder="Password" required="">
+                <button>Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="js/app.js"></script>
+
+</html>
